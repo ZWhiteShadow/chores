@@ -74,7 +74,7 @@
         // Reference starting date (February 27, 2026)
         const referenceDate = new Date('2026-02-27');
         
-        const people = ["Fabi", "Mahonri", "Wade"];
+        const people = ["Wade", "Mahonri", "Fabiola"];
         
         const taskSets = [
             ["Wash Dishes", "Clean Counter", "Take out Garbage"],
@@ -121,7 +121,7 @@
         function updateAssignments() {
             const today = new Date();
             const daysSinceReference = getDaysBetween(referenceDate, today);
-            // Add 2 to rotate forward so Mahonri has dishes today (Fabi had them yesterday)
+            // Add 2 to rotate forward so Mahonri has dishes today (Wade had them yesterday)
             const rotations = (daysSinceReference + 2) % 3;
             
             // Update the date header
